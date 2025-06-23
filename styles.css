@@ -14,14 +14,12 @@ body {
 }
 
 /* Ajuste para evitar que el contenido quede oculto bajo el navbar */
-.hero,
-.section:first-of-type {
-  padding-top: 160px;
+.hero {
+  padding-top: 180px;
 }
 
 @media (max-width: 768px) {
-  .hero,
-  .section:first-of-type {
+  .hero {
     padding-top: 300px;
   }
 }
