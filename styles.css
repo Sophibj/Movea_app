@@ -10,7 +10,19 @@ body {
   background: linear-gradient(to bottom right, #f9f0ff, #fff);
   color: #333;
   overflow-x: hidden;
-  /* Sin padding-top */
+}
+
+/* SOLUCIÓN para que el navbar no tape el contenido */
+.hero,
+.section:first-of-type {
+  padding-top: 180px;
+}
+
+@media (max-width: 768px) {
+  .hero,
+  .section:first-of-type {
+    padding-top: 320px;
+  }
 }
 
 /* Navbar */
@@ -265,7 +277,7 @@ ul li {
   }
 }
 
-/* Extra: Mejoras móviles estrictas */
+/* Responsive extra */
 @media (max-width: 480px) {
   .hero h1 {
     font-size: 1.8rem;
