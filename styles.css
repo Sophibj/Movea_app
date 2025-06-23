@@ -5,12 +5,25 @@
   box-sizing: border-box;
 }
 
+/* NO aplicar padding-top global al body */
 body {
   font-family: 'Segoe UI', sans-serif;
   background: linear-gradient(to bottom right, #f9f0ff, #fff);
   color: #333;
-  padding-top: 160px;
   overflow-x: hidden;
+}
+
+/* Agregar padding-top directamente a los primeros bloques de contenido */
+.hero,
+.section:first-of-type {
+  padding-top: 180px;
+}
+
+@media (max-width: 768px) {
+  .hero,
+  .section:first-of-type {
+    padding-top: 300px;
+  }
 }
 
 /* Navbar */
