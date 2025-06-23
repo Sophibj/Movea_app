@@ -202,6 +202,39 @@ ul li {
   color: #5e35b1;
   font-weight: 500;
 }
+
+.descarga-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.store-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.store-buttons img {
+  width: 180px;
+  max-width: 90%;
+  height: auto;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.store-buttons img:hover {
+  transform: scale(1.05);
+}
+
+.qr-img {
+  width: 140px;
+  height: auto;
+  margin-top: 20px;
+}
 /* Footer */
 .footer {
   background: linear-gradient(to right, #7b1fa2, #9c27b0);
