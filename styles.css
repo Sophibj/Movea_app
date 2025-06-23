@@ -12,16 +12,14 @@ body {
   overflow-x: hidden;
 }
 
-/* Compensar navbar fijo solo en primeros elementos */
-.hero,
-.section:first-of-type {
+/* NUEVO: compensación universal para navbar fijo */
+main {
   padding-top: 180px;
 }
 
 @media (max-width: 768px) {
-  .hero,
-  .section:first-of-type {
-    padding-top: 320px;
+  main {
+    padding-top: 300px;
   }
 }
 
@@ -178,6 +176,7 @@ ul li {
   line-height: 1.6;
 }
 
+/* FODA */
 .foda-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
@@ -277,7 +276,7 @@ ul li {
   }
 }
 
-/* Mobile specific */
+/* Mobile */
 @media (max-width: 480px) {
   .hero h1 {
     font-size: 1.8rem;
