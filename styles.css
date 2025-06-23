@@ -19,8 +19,9 @@ body {
   top: 0;
   width: 100%;
   background: linear-gradient(to right, #7b1fa2, #ba47bc);
-  padding: 10px 40px;
+  padding: 10px 20px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   z-index: 1000;
@@ -28,7 +29,8 @@ body {
 }
 
 .logo {
-  height: 160px;
+  height: 120px;
+  max-width: 100%;
   transition: transform 0.6s ease;
 }
 
@@ -39,19 +41,20 @@ body {
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 60px;
-  margin-right: 280px;
-  margin-left: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px 0;
 }
 
 .nav-links a {
   color: white;
   font-weight: bold;
   text-decoration: none;
-  padding: 8px 12px;
+  padding: 8px 16px;
   border-radius: 20px;
   transition: background 0.3s ease;
-  font-size: 1.6rem;
+  font-size: 1.2rem;
 }
 
 .nav-links a:hover,
@@ -62,20 +65,20 @@ body {
 /* Hero */
 .hero {
   text-align: center;
-  padding: 50px 20px 50px;
+  padding: 50px 20px;
   background: linear-gradient(to top, #e1b5fd, #f774c4);
 }
 
 .hero h1 {
-  font-size: 4.5rem;
+  font-size: 3rem;
   color: #7b1fa2;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .hero p {
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   color: #444;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .hero-img {
@@ -96,14 +99,14 @@ body {
 
 .section h2 {
   color: #6a1b9a;
-  font-size: 3rem;
-  margin-bottom: 25px;
+  font-size: 2rem;
+  margin-bottom: 20px;
 }
 
 .section p, .section ul {
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   color: #444;
-  margin-bottom: 18px;
+  margin-bottom: 15px;
   text-align: center;
 }
 
@@ -118,12 +121,13 @@ body {
 /* Funciones */
 ul li {
   list-style: none;
-  margin: 15px 0;
+  margin: 12px 0;
   text-align: center;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 /* Mensaje Bienvenida */
@@ -131,14 +135,14 @@ ul li {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 60px 20px;
+  padding: 50px 20px;
 }
 
 .mensaje-box {
   max-width: 800px;
   background: linear-gradient(to right, #f3e5f5, #e1bee7);
   border-radius: 15px;
-  padding: 35px;
+  padding: 30px;
   box-shadow: 0 10px 25px rgba(0,0,0,0.1);
   text-align: center;
   animation: fadeInUp 1s ease;
@@ -151,27 +155,28 @@ ul li {
 }
 
 .mensaje-box h2 {
-  font-size: 2.8rem;
+  font-size: 2rem;
   color: #6a1b9a;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .mensaje-box p {
-  font-size: 1.4rem;
+  font-size: 1.1rem;
   color: #4a148c;
-  line-height: 1.7;
+  line-height: 1.6;
 }
+
 .foda-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-  margin-top: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 15px;
+  margin-top: 30px;
   text-align: left;
   font-size: 1rem;
 }
 
 .foda-box {
-  padding: 20px;
+  padding: 18px;
   font-size: 1rem;
   border-radius: 10px;
   color: #fff;
@@ -189,20 +194,22 @@ ul li {
 .amenazas { background-color: #ffa726; }
 
 .foda-box h3 {
-  margin-bottom: 12px;
-  font-size: 1.2rem;
+  margin-bottom: 10px;
+  font-size: 1rem;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
 
+/* Testimonio */
 .testimonio-frase {
-  margin-top: 35px;
+  margin-top: 30px;
   margin-bottom: 25px;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   color: #5e35b1;
   font-weight: 500;
 }
 
+/* Descarga */
 .descarga-container {
   display: flex;
   flex-direction: column;
@@ -215,11 +222,11 @@ ul li {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 25px;
+  gap: 20px;
 }
 
 .store-buttons img {
-  width: 180px;
+  width: 160px;
   max-width: 90%;
   height: auto;
   border-radius: 12px;
@@ -231,18 +238,19 @@ ul li {
 }
 
 .qr-img {
-  width: 140px;
+  width: 130px;
   height: auto;
   margin-top: 20px;
 }
+
 /* Footer */
 .footer {
   background: linear-gradient(to right, #7b1fa2, #9c27b0);
   color: white;
   text-align: center;
-  padding: 35px 10px;
-  font-size: 1.2rem;
-  margin-top: 50px;
+  padding: 25px 10px;
+  font-size: 1rem;
+  margin-top: 40px;
 }
 
 /* Animaciones */
@@ -257,35 +265,35 @@ ul li {
   }
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .logo {
-    height: 120px;
+/* Extra: Mejoras móviles estrictas */
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 1.8rem;
   }
 
   .nav-links {
-    flex-direction: column;
-    align-items: center;
+    gap: 10px;
   }
 
-  .hero h1 {
-    font-size: 2rem;
+  .nav-links a {
+    font-size: 1.1rem;
+    padding: 6px 10px;
   }
 
-  .mensaje-box h2 {
-    font-size: 2rem;
+  .logo {
+    height: 90px;
+  }
+
+  .section h2 {
+    font-size: 1.5rem;
   }
 
   .mensaje-box p {
-    font-size: 1rem;
+    font-size: 0.95rem;
   }
 
-  .section {
-    padding: 40px 20px;
+  ul li {
+    font-size: 1rem;
+    flex-direction: column;
   }
 }
