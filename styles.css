@@ -12,7 +12,7 @@ body {
   overflow-x: hidden;
 }
 
-/* SOLUCIÓN para que el navbar no tape el contenido */
+/* Compensar navbar fijo solo en primeros elementos */
 .hero,
 .section:first-of-type {
   padding-top: 180px;
@@ -100,7 +100,7 @@ body {
   box-shadow: 0 0 25px rgba(0,0,0,0.1);
 }
 
-/* Sections */
+/* Secciones */
 .section {
   max-width: 1000px;
   margin: auto;
@@ -277,7 +277,7 @@ ul li {
   }
 }
 
-/* Responsive extra */
+/* Mobile specific */
 @media (max-width: 480px) {
   .hero h1 {
     font-size: 1.8rem;
