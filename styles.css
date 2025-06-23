@@ -9,18 +9,8 @@ body {
   font-family: 'Segoe UI', sans-serif;
   background: linear-gradient(to bottom right, #f9f0ff, #fff);
   color: #333;
+  padding-top: 160px;
   overflow-x: hidden;
-}
-
-/* NUEVO: compensación universal para navbar fijo */
-main {
-  padding-top: 180px;
-}
-
-@media (max-width: 768px) {
-  main {
-    padding-top: 300px;
-  }
 }
 
 /* Navbar */
@@ -98,7 +88,7 @@ main {
   box-shadow: 0 0 25px rgba(0,0,0,0.1);
 }
 
-/* Secciones */
+/* Sections */
 .section {
   max-width: 1000px;
   margin: auto;
@@ -176,7 +166,6 @@ ul li {
   line-height: 1.6;
 }
 
-/* FODA */
 .foda-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
@@ -276,7 +265,7 @@ ul li {
   }
 }
 
-/* Mobile */
+/* Extra: Mejoras móviles estrictas */
 @media (max-width: 480px) {
   .hero h1 {
     font-size: 1.8rem;
